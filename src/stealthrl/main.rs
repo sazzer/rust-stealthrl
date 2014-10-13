@@ -1,3 +1,9 @@
+extern crate ncurses;
+#[cfg(not(test))]
 fn main() {
-    println!("Hello {}", "Graham");
+    ncurses::initscr();
+    ncurses::printw("Hello, World");
+    ncurses::refresh();
+    ncurses::getch();
+    ncurses::endwin();
 }

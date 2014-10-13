@@ -11,3 +11,5 @@ name = "stealthrl"
 path = "stealthrl/main.rs"
 doc = true
 
+[dependencies.ncurses]
+git = "https://github.com/jeaye/ncurses-rs.git"
