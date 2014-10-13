@@ -9,4 +9,5 @@ use stealthrlui::ui;
 fn main() {
     let ui = ui::create_ui();
     debug!("This is after the UI is created");
+    debug!("UI size is {}x{}", ui.width(), ui.height());
 }
